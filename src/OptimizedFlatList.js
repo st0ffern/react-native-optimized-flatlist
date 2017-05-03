@@ -3,7 +3,7 @@ import {
   FlatList,
 } from 'react-native'
 
-import ListItem from './ListItem'
+import FlatListItem from './FlatListItem'
 
 export default class OptimizedFlatList extends React.PureComponent {
 
@@ -29,7 +29,7 @@ export default class OptimizedFlatList extends React.PureComponent {
   _renderItem(data){
     const view = this.props.renderItem(data)
     return (
-      <ListItem
+      <FlatListItem
         ref={ myItem => this._addRowRefs(myItem, data)}
         viewComponent={view}
         data={data}
