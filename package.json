@@ -1,0 +1,33 @@
+{
+  "name": "react-native-optimized-flatlist",
+  "version": "0.0.0-development",
+  "description": "Optimization for complex and slow React Native FlatLists",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stoffern/react-native-optimized-flatlist.git"
+  },
+  "keywords": [
+    "react-native",
+    "flatlist"
+  ],
+  "author": "stoffern",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stoffern/react-native-optimized-flatlist/issues"
+  },
+  "homepage": "https://github.com/stoffern/react-native-optimized-flatlist#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
+    "semantic-release": "^6.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
