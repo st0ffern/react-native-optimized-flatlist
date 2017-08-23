@@ -22,6 +22,9 @@ export default class OptimizedFlatList extends React.PureComponent {
   }
   
   _updateItem(index, visibility){
+        if (!this.rowRefs[index].ref) {
+      return false;
+    }
     this.rowRefs[index].ref.setVisibility(visibility)
     return visibility
   }
