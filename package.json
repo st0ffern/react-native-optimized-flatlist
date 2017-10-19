@@ -23,7 +23,7 @@
   "homepage": "https://github.com/stoffern/react-native-optimized-flatlist#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
-    "semantic-release": "^6.3.2"
+    "semantic-release": "^8.0.3"
   },
   "config": {
     "commitizen": {

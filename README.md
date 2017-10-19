@@ -1,4 +1,6 @@
 # react-native-optimized-flatlist
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/stoffern/react-native-optimized-flatlist.svg)](https://greenkeeper.io/)
 ![](https://img.shields.io/npm/v/react-native-optimized-flatlist.svg)
 
 __Optimization for FlatLists. This is a fix over the FlatList that removed every item that is not inside the viewport. This will give a more stable and faster FlatList as performance dont drop! :)__
