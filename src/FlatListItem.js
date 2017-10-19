@@ -2,11 +2,12 @@ import React from 'react'
 import { 
   View,
 } from 'react-native'
+import PropTypes from 'prop-types'
 
 
 export default class FlatListItem extends React.PureComponent {
   static propTypes = {
-    viewComponent: React.PropTypes.element.isRequired
+    viewComponent: PropTypes.element.isRequired
   };
 
   constructor(props) {

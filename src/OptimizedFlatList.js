@@ -2,7 +2,6 @@ import React from 'react'
 import { 
   FlatList,
 } from 'react-native'
-
 import FlatListItem from './FlatListItem'
 
 export default class OptimizedFlatList extends React.PureComponent {
