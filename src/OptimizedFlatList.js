@@ -8,12 +8,9 @@ export default class OptimizedFlatList extends React.PureComponent {
 
   constructor(props) {
     super(props);
-    this.state = {}
-    this.rowRefs =[]
-  }
-
-  _scrollToIndex(params: { index?: number }) {
-    this._listRef.scrollToIndex(params);
+    this.state = {};
+    this.rowRefs =[];
+    this._onViewableItemsChanged = this._onViewableItemsChanged.bind(this);
   }
 
   _addRowRefs(ref, data){
@@ -62,9 +59,8 @@ export default class OptimizedFlatList extends React.PureComponent {
     return (
       <FlatList
         {...this.props}
-        ref={ref => (this._listRef = ref)}
         renderItem={ data => this._renderItem(data) }
-        onViewableItemsChanged={this._onViewableItemsChanged.bind(this)}
+        onViewableItemsChanged={this._onViewableItemsChanged}
       />
     )
   }
