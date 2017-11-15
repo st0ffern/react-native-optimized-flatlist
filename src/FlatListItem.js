@@ -14,14 +14,14 @@ export default class FlatListItem extends React.PureComponent {
     super(props);
     this.state = {
       visibility: true,
-    }
-  }
-
-  onLayout(evt) {
+    };
     this.viewProperties = {
       width: 0,
       height: 0,
-    }
+    };
+  }
+
+  onLayout(evt) {
     this.viewProperties.width = evt.nativeEvent.layout.width;
     this.viewProperties.height = evt.nativeEvent.layout.height;
   }
