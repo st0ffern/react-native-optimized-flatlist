@@ -10,6 +10,7 @@ export default class OptimizedFlatList extends React.PureComponent {
     super(props);
     this.state = {}
     this.rowRefs =[]
+    this._onViewableItemsChanged = this._onViewableItemsChanged.bind(this)
   }
 
   _addRowRefs(ref, data){
@@ -59,7 +60,7 @@ export default class OptimizedFlatList extends React.PureComponent {
       <FlatList
         {...this.props}
         renderItem={ data => this._renderItem(data) }
-        onViewableItemsChanged={this._onViewableItemsChanged.bind(this)}
+        onViewableItemsChanged={this._onViewableItemsChanged}
       />
     )
   }
